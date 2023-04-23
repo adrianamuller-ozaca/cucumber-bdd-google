@@ -12,8 +12,8 @@ only:
   - test-ci
   
 script:
-  - docker pull docker push adrianamuller/bdd-test
-  - docker run -v $PWD/:/app/report/ docker push adrianamuller/bdd-test
+  - docker pull adrianamuller/bdd-test
+  - docker run -v $PWD/:/app/report/ adrianamuller/bdd-test
 
 # after_script:
 #   - bash ./telegram_notification.sh
